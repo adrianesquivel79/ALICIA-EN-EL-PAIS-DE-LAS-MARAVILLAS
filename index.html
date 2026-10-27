@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Práctica: Alicia en el País de las Maravillas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>A través del Espejo y lo que Alicia encontró allí</h1>
+        <p>Actividad Práctica de Programación Web I • JavaScript Nativó</p>
+    </header>
+
+    <main>
+        <!-- EJERCICIO 1 -->
+        <section class="card">
+            <h2>Ejercicio 1: La poción mágica de Alicia</h2>
+            <p>Descubre si Alicia podrá atravesar la pequeña puerta según la poción consumida.</p>
+            
+            <form id="form-pociom">
+                <div class="form-group">
+                    <label for="altura-inicial">Altura inicial de Alicia (cm):</label>
+                    <input type="number" id="altura-inicial" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad-pocion">Cantidad de poción consumida (ml):</label>
+                    <input type="number" id="cantidad-pocion" step="0.1" required>
+                </div>
+
+                <button type="submit">Probar Poción</button>
+            </form>
+
+            <div id="resultado-ej1" class="resultado"></div>
+        </section>
+
+        <!-- EJERCICIO 2 -->
+        <section class="card">
+            <h2>Ejercicio 2: La merienda del Sombrerero Loco</h2>
+            <p>Calcula el costo total de la merienda seleccionando tu bebida favorita y la cantidad de tazas.</p>
+
+            <form id="form-merienda">
+                <div class="form-group">
+                    <label for="nombre-invitado">Nombre del invitado:</label>
+                    <input type="text" id="nombre-invitado" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-bebida">Tipo de bebida:</label>
+                    <select id="tipo-bebida" required>
+                        <option value="">-- Seleccione una bebida --</option>
+                        <option value="te">Té Loco (Bs. 10)</option>
+                        <option value="cafe">Café del Lirón (Bs. 12)</option>
+                        <option value="infusion">Infusión de Rosas de la Reina (Bs. 15)</option>
+                        <option value="chocolate">Chocolate del Gato de Cheshire (Bs. 18)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad-tazas">Cantidad de tazas (Máx. 20):</label>
+                    <input type="number" id="cantidad-tazas" min="1" max="20" required>
+                </div>
+
+                <button type="submit">Calcular Merienda</button>
+            </form>
+
+            <div id="resultado-ej2" class="resultado"></div>
+        </section>
+
+        <!-- EJERCICIO 3 -->
+        <section class="card">
+            <h2>Ejercicio 3: El desafío de la Reina de Corazones</h2>
+            <p>Analiza cartas numeradas secuencialmente bajo las estrictas órdenes de la Reina.</p>
+
+            <form id="form-reina">
+                <div class="form-group">
+                    <label for="cantidad-cartas">Cantidad de cartas a analizar (Máx. 100):</label>
+                    <input type="number" id="cantidad-cartas" min="1" max="100" required>
+                </div>
+
+                <button type="submit">Ejecutar Juicio</button>
+            </form>
+
+            <div id="resultado-ej3" class="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Programación Web I</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
